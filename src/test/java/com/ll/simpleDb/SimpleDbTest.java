@@ -1,7 +1,8 @@
 package com.ll.simpleDb;
 
-import com.ll.Article;
+
 import com.ll.SimpleDb.SimpleDb;
+import com.ll.SimpleDb.Sql;
 import org.junit.jupiter.api.*;
 
 import java.time.LocalDateTime;

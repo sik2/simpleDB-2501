@@ -1,10 +1,8 @@
 package com.ll.simpleDb;
 
-import lombok.Getter;
 
 import java.time.LocalDateTime;
 
-@Getter
 public class Article {
     private long id;
     private LocalDateTime createdDate;
@@ -12,4 +10,28 @@ public class Article {
     private String title;
     private String body;
     private boolean isBlind;
+
+    public long getId() {
+        return id;
+    }
+
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
+    }
+
+    public LocalDateTime getModifiedDate() {
+        return modifiedDate;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public boolean isBlind() {
+        return isBlind;
+    }
 }
