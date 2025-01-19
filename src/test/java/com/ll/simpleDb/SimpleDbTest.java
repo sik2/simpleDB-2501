@@ -1,7 +1,6 @@
 package com.ll.simpleDb;
 
-import com.ll.Article;
-import com.ll.SimpleDb.SimpleDb;
+
 import org.junit.jupiter.api.*;
 
 import java.time.LocalDateTime;
@@ -16,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
@@ -24,7 +24,7 @@ public class SimpleDbTest {
 
     @BeforeAll
     public static void beforeAll() {
-        simpleDb = new SimpleDb("localhost", "root", "lldj123414", "simpleDb__test");
+        simpleDb = new SimpleDb("localhost", "root", "1111", "simpleDb_test");
         simpleDb.setDevMode(true);
 
         createArticleTable();
